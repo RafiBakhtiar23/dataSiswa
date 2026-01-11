@@ -1,0 +1,170 @@
+/* ================= ROOT ================= */
+:root {
+    --primary: #0f172a;
+    --secondary: #1e293b;
+    --accent: #2563eb;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #0f172a;
+    --muted: #64748b;
+}
+
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: var(--primary) !important;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+}
+
+/* ================= CARD ================= */
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.card-header {
+    background: transparent;
+    border-bottom: 1px solid var(--border);
+    font-weight: 500;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-outline-primary {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-outline-success {
+    color: var(--success);
+    border-color: var(--success);
+}
+
+.btn-outline-success:hover {
+    background: var(--success);
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: var(--danger);
+    border-color: var(--danger);
+}
+
+.btn-outline-danger:hover {
+    background: var(--danger);
+    color: #fff;
+}
+
+/* ================= TABLE ================= */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13px;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+    color: var(--muted);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.table tbody td {
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* FOTO */
+.table img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ================= DATATABLE ================= */
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+.dataTables_filter input,
+.dataTables_length select {
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+/* ================= PAGINATION ================= */
+.page-link {
+    border-radius: 8px !important;
+    font-size: 12px;
+}
+
+.page-item.active .page-link {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}   
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #fff;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+}
